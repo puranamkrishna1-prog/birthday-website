@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎂 Happy Birthday Sai 🎂</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    background:linear-gradient(135deg,#ffd6f5,#f2d7ff,#e6d8ff);
+    overflow-x:hidden;
+}
+
+/* Floating Stars */
+.star{
+    position:fixed;
+    font-size:24px;
+    animation:float 10s linear infinite;
+    z-index:-1;
+}
+
+@keyframes float{
+    from{transform:translateY(100vh);}
+    to{transform:translateY(-120vh);}
+}
+
+h1{
+    color:#ff1493;
+    font-size:60px;
+    margin-top:20px;
+}
+
+h2{
+    color:#8a2be2;
+}
+
+.unicorns{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 40px;
+    font-size:90px;
+}
+
+/* Music */
+.music{
+    margin:20px;
+}
+
+/* Birthday Message */
+.message{
+    width:80%;
+    max-width:700px;
+    margin:25px auto;
+    padding:20px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+    font-size:20px;
+    line-height:1.7;
+}
+
+/* Gifts */
+.gifts{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.gift button{
+    font-size:90px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.gift button:hover{
+    transform:scale(1.15);
+}
+
+.gift img{
+    display:none;
+    width:250px;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid hotpink;
+    margin-top:10px;
+    box-shadow:0 0 15px pink;
+}
+
+/* Love Message */
+.love-message{
+    width:80%;
+    max-width:750px;
+    margin:40px auto;
+    padding:25px;
+    background:linear-gradient(135deg,#ffe6f2,#fff5fa);
+    border-radius:25px;
+    box-shadow:0 0 15px rgba(255,20,147,0.25);
+    font-size:22px;
+    line-height:1.8;
+    color:#b30059;
+    border:3px solid #ff69b4;
+}
+
+/* Footer */
+.footer{
+    margin:40px;
+    font-size:28px;
+    color:#d63384;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating Stars -->
+<div class="star" style="left:10%;animation-delay:0s;">⭐</div>
+<div class="star" style="left:25%;animation-delay:2s;">✨</div>
+<div class="star" style="left:50%;animation-delay:4s;">⭐</div>
+<div class="star" style="left:70%;animation-delay:1s;">✨</div>
+<div class="star" style="left:90%;animation-delay:3s;">⭐</div>
+
+<!-- Unicorns -->
+<div class="unicorns">
+🦄
+🦄
+</div>
+
+<h1>🎂 Happy Birthday Sai 🎂</h1>
+
+<h2>✨ Wishing You a Magical Birthday ✨</h2>
+
+<!-- Music -->
+<div class="music">
+<h3>🎵 Wanna Be Yours 🎵</h3>
+
+<audio controls autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+</div>
+
+<!-- Birthday Message -->
+<div class="message">
+💖 Dear Sai 💖 <br><br>
+
+Happy Birthday to the most wonderful best friend! 🌸<br>
+
+May your life always be filled with happiness, laughter,
+beautiful memories, and endless success. 💫<br><br>
+
+Thank you for being an amazing friend. 💜<br>
+
+Have a magical day! 🦄🎉🎁
+</div>
+
+<!-- Gift Boxes -->
+<div class="gifts">
+
+<div class="gift">
+<button onclick="togglePhoto('p1')">🎁</button><br>
+<img id="p1" src="Photo1.jpeg" alt="Photo 1">
+</div>
+
+<div class="gift">
+<button onclick="togglePhoto('p2')">🎁</button><br>
+<img id="p2" src="Photo2.jpeg" alt="Photo 2">
+</div>
+
+<div class="gift">
+<button onclick="togglePhoto('p3')">🎁</button><br>
+<img id="p3" src="Photo3.jpeg" alt="Photo 3">
+</div>
+
+</div>
+
+<!-- Love Message -->
+<div class="love-message">
+💖 A Message From My Heart 💖 <br><br>
+
+I always wanted to be with you. 🌸<br>
+
+Can you give me a chance for a lifetime? 💕<br><br>
+
+How beautiful you are. ✨<br>
+
+Every time I see you, I fall for you all over again. ❤️<br><br>
+
+Your smile makes my day brighter, and your presence makes every moment special. 🌷<br><br>
+
+Like this, I hope we stay together forever, creating beautiful memories and sharing every happiness side by side. 💜✨<br><br>
+
+Forever and always. ♾️❤️
+</div>
+
+<!-- Footer -->
+<div class="footer">
+💜 Best Friends Forever 💜
+</div>
+
+<script>
+function togglePhoto(id){
+    const img = document.getElementById(id);
+
+    if(img.style.display === "block"){
+        img.style.display = "none";
+    } else {
+        img.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
